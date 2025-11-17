@@ -11,4 +11,11 @@ const meta: Meta<typeof App> = {
 
 export default meta
 
-export const Default: Story = {}
+export const Blank: Story = {}
+
+export const WithTemplate: Story = {
+    render: () => ({
+        components: {App},
+        template: `<App/>`
+    })
+}
